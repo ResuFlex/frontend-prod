@@ -1,26 +1,29 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@theme {
+  /* yellow  - purple*/
+  --color-theme-500: #eef35f;
+  --color-theme-600: #d4da4f;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* purple */
+  --color-theme-secondary-500: #b6abff;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* TODO: rename it to dark (black) */
+  --color-primary-500: #0e0f11;
+  --color-primary-600: #141617;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* white */
+  --color-light-500: #ffffff;
+  --color-light-600: #a1a1aa;
+
+  --color-border-500: #ffffff1a;
+  --color-border-600: #f5f5ff1a;
+
+  --color-hover-100: #8080801a;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
