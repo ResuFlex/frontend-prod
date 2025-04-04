@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 
 const Header: React.FC = () => {
+  console.log('INFO github account testing');
 
   return (
     <header className="bg-primary-500 flex items-center justify-between">
